@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.NotificationsFragment"
+    android:background="@drawable/background_profile">
+
+
+  <androidx.cardview.widget.CardView
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="@dimen/margin_small"
+      android:id="@+id/what_is_decky"
+      android:layout_width="wrap_content"
+      android:layout_height="@dimen/margin_medium"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:cardCornerRadius="@dimen/margin_medium"
+      >
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="decky nedir?"
+        android:paddingStart="@dimen/margin_small"
+        android:paddingEnd="@dimen/margin_small"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+
+  </androidx.cardview.widget.CardView>
+
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/btn_exit"
+      android:layout_width="40dp"
+      android:layout_height="40dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:layout_marginTop="@dimen/margin_small"
+      android:layout_marginEnd="@dimen/margin_small"
+      app:cardCornerRadius="@dimen/margin_xxlarge"
+      >
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:src="@drawable/ic_exit"/>
+
+  </androidx.cardview.widget.CardView>
+
+
+
+
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/btn_instagram"
+      android:layout_width="@dimen/margin_large"
+      android:layout_height="@dimen/margin_large"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/btn_facebook"
+      app:layout_constraintStart_toEndOf="@+id/btn_linkedin"
+      android:layout_marginBottom="@dimen/margin_xxlarge"
+      app:cardCornerRadius="@dimen/margin_xxlarge"
+      >
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="7dp"
+        android:src="@drawable/ic_instagram"/>
+
+  </androidx.cardview.widget.CardView>
+
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/btn_facebook"
+      android:layout_width="@dimen/margin_large"
+      android:layout_height="@dimen/margin_large"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/btn_twitter"
+      app:layout_constraintStart_toEndOf="@+id/btn_instagram"
+      android:layout_marginBottom="@dimen/margin_xxlarge"
+      app:cardCornerRadius="@dimen/margin_xxlarge"
+
+      >
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:src="@drawable/ic_facebook"/>
+
+  </androidx.cardview.widget.CardView>
+
+
+
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/btn_linkedin"
+      android:layout_width="@dimen/margin_large"
+      android:layout_height="@dimen/margin_large"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/btn_instagram"
+      app:layout_constraintStart_toStartOf="parent"
+      android:layout_marginBottom="@dimen/margin_xxlarge"
+      android:layout_marginStart="@dimen/margin_medium"
+      app:cardCornerRadius="@dimen/margin_xxlarge"
+      >
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="7dp"
+        android:src="@drawable/ic_linkedin"/>
+  </androidx.cardview.widget.CardView>
+
+  <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/txt_follow_us"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintBottom_toTopOf="@id/btn_instagram"
+      android:text="Bizi takip edin"
+      android:layout_marginBottom="@dimen/margin_small"/>
+
+
+  <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/txt_battle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/txt_basari"
+      app:layout_constraintBottom_toTopOf="@id/txt_follow_us"
+      android:text="Battle"
+      android:layout_marginBottom="@dimen/margin_large"/>
+
+  <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/txt_basari"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintBottom_toTopOf="@id/txt_follow_us"
+      app:layout_constraintStart_toEndOf="@+id/txt_battle"
+      android:text="Başarı"
+      android:layout_marginBottom="@dimen/margin_large"/>
+
+  <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/num_battle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/txt_basari"
+      app:layout_constraintBottom_toTopOf="@id/txt_battle"
+      android:text="12"
+      android:textSize="32sp"
+      android:textStyle="bold"
+      android:textColor="@color/color_battle"
+      android:layout_marginBottom="@dimen/margin_small"/>
+
+  <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/num_basari"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintBottom_toTopOf="@id/txt_basari"
+      app:layout_constraintStart_toEndOf="@+id/txt_battle"
+      android:text="9"
+      android:textSize="32sp"
+      android:textStyle="bold"
+      android:textColor="@color/color_sucsess"
+      android:layout_marginBottom="@dimen/margin_small"/>
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/card_battle"
+      android:layout_width="@dimen/margin_xlarge"
+      android:layout_height="@dimen/margin_xlarge"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/txt_basari"
+      app:layout_constraintBottom_toTopOf="@id/num_battle"
+      android:layout_marginBottom="@dimen/margin_small"
+      app:cardCornerRadius="@dimen/margin_xxlarge"
+      >
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:src="@drawable/ic_battle"/>
+
+  </androidx.cardview.widget.CardView>
+
+  <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/username1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintBottom_toTopOf="@id/card_battle"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      android:text="John Doe"
+      android:textSize="32sp"
+      android:textStyle="bold"
+      />
+
+
+  <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/username2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintBottom_toTopOf="@id/username1"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      android:text="John Doe"
+      android:textSize="32sp"
+      android:textStyle="bold"
+      />
+
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/btn_edit"
+      android:layout_width="@dimen/margin_large"
+      android:layout_height="@dimen/margin_large"
+      app:layout_constraintBottom_toTopOf="@id/username1"
+      app:layout_constraintStart_toEndOf="@id/username2"
+      app:cardCornerRadius="@dimen/margin_xxlarge"
+      android:layout_marginStart="@dimen/margin_small"
+      >
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_edit"/>
+
+  </androidx.cardview.widget.CardView>
+
+
+
+
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/img_profile"
+      android:layout_width="@dimen/margin_xxlarge"
+      android:layout_height="@dimen/margin_xxlarge"
+      app:cardCornerRadius="@dimen/margin_xxlarge"
+      app:layout_constraintBottom_toTopOf="@id/username2"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      >
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:src="@drawable/avatardefault"/>
+
+  </androidx.cardview.widget.CardView>
+
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/card_basari"
+      android:layout_width="@dimen/margin_xlarge"
+      android:layout_height="@dimen/margin_xlarge"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintBottom_toTopOf="@id/num_basari"
+      app:layout_constraintStart_toEndOf="@+id/txt_battle"
+      android:layout_marginBottom="@dimen/margin_small"
+      app:cardCornerRadius="@dimen/margin_xxlarge"
+      >
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:src="@drawable/ic_sucsess"/>
+  </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/btn_twitter"
+      android:layout_width="@dimen/margin_large"
+      android:layout_height="@dimen/margin_large"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toEndOf="@id/btn_facebook"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:layout_marginBottom="@dimen/margin_xxlarge"
+      android:layout_marginEnd="@dimen/margin_medium"
+      app:cardCornerRadius="@dimen/margin_xxlarge"
+      >
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="7dp"
+        android:src="@drawable/ic_twitter"/>
+
+  </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
